@@ -50,11 +50,10 @@ function App() {
 
   <div className="stepCounterOptions">
 
-    <button  style={{ padding: "10px 15px" }} onClick={handleDecrement}>Decrement</button>
-    <button   style={{ padding: "10px 15px" }} onClick={handleIncrement}>Increment</button>
-    <button
+    <button  className="buttonPadding" onClick={handleDecrement}>Decrement</button>
+    <button  className="buttonPadding" onClick={handleIncrement}>Increment</button>
+    <button  className="buttonPadding"
       style={{
-        padding: "10px 15px",
         backgroundColor: "#f44336",
         color: "white",
       }}
