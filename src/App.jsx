@@ -69,18 +69,11 @@ function App() {
     Changes saved.
   </div>
 
-  <div>
-    <h3 style={{ borderBottom: "1px solid #eee", paddingBottom: 5 }}>
+  <div className="countHistory">
+    <h3>
       Count History:
     </h3>
-    <ul
-      style={{
-        listStyleType: "none",
-        paddingLeft: 0,
-        maxHeight: 150,
-        overflowY: "auto",
-      }}
-    >
+    <ul>
      {history.map((item, index) => (<li key= {index} style={{ padding: "3px 0px", borderBottom: "none" }}>{item}</li>))}
     </ul>
   </div>
