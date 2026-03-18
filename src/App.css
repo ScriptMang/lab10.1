@@ -50,3 +50,9 @@
   padding: 8px; 
   width: 60px;
 }
+
+#saveStatus {
+  margin-bottom: 10px;
+  text-align: center;
+  font-style: italic;
+}

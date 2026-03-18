@@ -65,7 +65,7 @@ function App() {
     />
   </div>
 
-  <div style={{ marginBottom: 10, textAlign: "center", fontStyle: "italic" }}>
+  <div id="saveStatus">
     Changes saved.
   </div>
 
