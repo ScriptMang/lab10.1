@@ -42,7 +42,7 @@ function App() {
   return (
     <>
      <div className="stepCounterCard">
-  <h2 style={{ textAlign: "center" }}>Counter</h2>
+  <h2>Counter</h2>
 
   <div style={{ fontSize: "2em", textAlign: "center", margin: "20px 0" }}>
     Current Count: <span style={{ fontWeight: "bold" }}>{count}</span>
