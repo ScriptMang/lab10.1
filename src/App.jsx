@@ -54,7 +54,7 @@ function App() {
     <button  className="buttonPadding" id="resetCounter">Reset</button>
   </div>
 
-  <div style={{ marginBottom: 20, textAlign: "center" }}>
+  <div className="stepValueDisplay">
     <label htmlFor="stepInput">Step Value: </label>
     <input
       type="number"
