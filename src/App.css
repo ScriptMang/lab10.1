@@ -45,3 +45,8 @@
 .stepValueDisplay {
   margin-bottom: 20;
 }
+
+.stepValueDisplay input {
+  padding: 8px; 
+  width: 60px;
+}

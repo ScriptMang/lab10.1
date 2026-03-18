@@ -60,7 +60,6 @@ function App() {
       type="number"
       id="stepInput"
       min={1}
-      style={{ padding: 8, width: 60 }}
       value={stepValue}
       onChange={(e) => setStepValue(e.target.value)}
     />
