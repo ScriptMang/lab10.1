@@ -36,3 +36,8 @@
 .buttonPadding{
   padding: 10px 15px;
 }
+
+#resetCounter {
+  background-color: #f44336;
+  color: white;
+}

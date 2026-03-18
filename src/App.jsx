@@ -49,17 +49,9 @@ function App() {
   </div>
 
   <div className="stepCounterOptions">
-
     <button  className="buttonPadding" onClick={handleDecrement}>Decrement</button>
     <button  className="buttonPadding" onClick={handleIncrement}>Increment</button>
-    <button  className="buttonPadding"
-      style={{
-        backgroundColor: "#f44336",
-        color: "white",
-      }}
-    >
-      Reset
-    </button>
+    <button  className="buttonPadding" id="resetCounter">Reset</button>
   </div>
 
   <div style={{ marginBottom: 20, textAlign: "center" }}>
