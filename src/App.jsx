@@ -78,7 +78,7 @@ function App() {
     </ul>
   </div>
 
-  <small style={{ display: "block", textAlign: "center", marginTop: 20 }}>
+  <small id="stepValueKeyboardInstr">
     Use ArrowUp to increment and ArrowDown to decrement.
   </small>
 </div>

@@ -68,3 +68,9 @@
   max-height: 150px;
   overflow-y: auto;
 }
+
+#stepValueKeyboardInstr {
+   display: block; 
+   text-align: center; 
+   margin-top: 20px;
+}
