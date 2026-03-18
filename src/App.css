@@ -46,7 +46,7 @@
   margin-bottom: 20;
 }
 
-.stepValueDisplay input {
+#stepInput {
   padding: 8px; 
   width: 60px;
 }
