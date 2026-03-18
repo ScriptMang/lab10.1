@@ -69,6 +69,11 @@
   overflow-y: auto;
 }
 
+.countHistory li {
+  padding: 3px 0px; 
+  border-bottom: none; 
+}
+
 #stepValueKeyboardInstr {
    display: block; 
    text-align: center; 

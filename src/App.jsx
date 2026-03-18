@@ -74,7 +74,7 @@ function App() {
       Count History:
     </h3>
     <ul>
-     {history.map((item, index) => (<li key= {index} style={{ padding: "3px 0px", borderBottom: "none" }}>{item}</li>))}
+     {history.map((item, index) => (<li key= {index}>{item}</li>))}
     </ul>
   </div>
 
