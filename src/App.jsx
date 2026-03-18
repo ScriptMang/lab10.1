@@ -48,14 +48,7 @@ function App() {
     Current Count: <span>{count}</span>
   </div>
 
-  <div
-    style={{
-      display: "flex",
-      justifyContent: "center",
-      gap: 10,
-      marginBottom: 20,
-    }}
-  >
+  <div className="stepCounterOptions">
 
     <button  style={{ padding: "10px 15px" }} onClick={handleDecrement}>Decrement</button>
     <button   style={{ padding: "10px 15px" }} onClick={handleIncrement}>Increment</button>
