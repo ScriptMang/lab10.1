@@ -7,20 +7,13 @@ function App() {
   const [stepValue, setStepValue] = useState(1);
   const [history, setHistory] = useState([]);
 
-  // const history = useMemo(()=>{
-  //     return [(prev)=> {...prev, count}];
-  // }, [count]);
-
   useEffect(() => {
-
-    if( history[history.length-1] ===count){
+    if( history[history.length-1] === count){
       return null
-    }
-    else{
-
+    } else {
       setHistory((prevHistory) => [...prevHistory, count]);
     }
-}, [count]);
+  }, [count]);
 
 
   useEffect(() => {
