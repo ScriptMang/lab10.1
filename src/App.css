@@ -1,3 +1,10 @@
+#root {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
 .stepCounterCard {
     font-family: "sans-serif";
     max-width: 500;
