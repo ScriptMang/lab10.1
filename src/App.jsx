@@ -41,18 +41,7 @@ function App() {
   
   return (
     <>
-     <div
-  style={{
-    fontFamily: "sans-serif",
-    maxWidth: 500,
-    margin: "auto",
-    padding: 20,
-    border: "1px solid #ccc",
-    borderRadius: 8,
-    marginTop: 20,
-    marginBottom: 20,
-  }}
->
+     <div className="stepCounterCard">
   <h2 style={{ textAlign: "center" }}>Counter</h2>
 
   <div style={{ fontSize: "2em", textAlign: "center", margin: "20px 0" }}>

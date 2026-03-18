@@ -1,0 +1,10 @@
+.stepCounterCard {
+    font-family: "sans-serif";
+    max-width: 500;
+    margin: "auto";
+    padding: 20;
+    border: "1px solid #ccc";
+    border-radius: 8;
+    margin-top: 20;
+    margin-bottom: 20;
+}
