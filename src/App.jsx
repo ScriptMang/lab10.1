@@ -8,80 +8,80 @@ function App() {
   const [history, setHistory] = useState([]);
 
   useEffect(() => {
-    if( history[history.length-1] === count){
-      return null
+    if (history[history.length - 1] === count) {
+      return null;
     } else {
       setHistory((prevHistory) => [...prevHistory, count]);
     }
   }, [count]);
 
-
   useEffect(() => {
     const timer = setTimeout(() => {
       localStorage.setItem("History", JSON.stringify(history));
     }, 500);
-  
+
     return () => {
       clearTimeout(timer);
-    }
-  }, [history])
+    };
+  }, [history]);
 
   console.log("history: ", history);
 
-
   const handleIncrement = () => {
-    setCount((prev) => prev + +stepValue)
-  }
-  
+    setCount((prev) => prev + +stepValue);
+  };
 
   const handleDecrement = () => {
-    setCount((prev) => prev - +stepValue)
-  }
- 
-  
+    setCount((prev) => prev - +stepValue);
+  };
+
   return (
     <>
-     <div className="stepCounterCard">
-      <h2>Counter</h2>
+      <div className="stepCounterCard">
+        <h2>Counter</h2>
 
-  <div id="currCount">
-    Current Count: <span>{count}</span>
-  </div>
+        <div id="currCount">
+          Current Count: <span>{count}</span>
+        </div>
 
-  <div className="stepCounterOptions">
-    <button  className="buttonPadding" onClick={handleDecrement}>Decrement</button>
-    <button  className="buttonPadding" onClick={handleIncrement}>Increment</button>
-    <button  className="buttonPadding" id="resetCounter">Reset</button>
-  </div>
+        <div className="stepCounterOptions">
+          <button className="buttonPadding" onClick={handleDecrement}>
+            Decrement
+          </button>
+          <button className="buttonPadding" onClick={handleIncrement}>
+            Increment
+          </button>
+          <button className="buttonPadding" id="resetCounter">
+            Reset
+          </button>
+        </div>
 
-  <div className="stepValueDisplay">
-    <label htmlFor="stepInput">Step Value: </label>
-    <input
-      type="number"
-      id="stepInput"
-      min={1}
-      value={stepValue}
-      onChange={(e) => setStepValue(e.target.value)}
-    />
-  </div>
+        <div className="stepValueDisplay">
+          <label htmlFor="stepInput">Step Value: </label>
+          <input
+            type="number"
+            id="stepInput"
+            min={1}
+            value={stepValue}
+            onChange={(e) => setStepValue(e.target.value)}
+          />
+        </div>
 
-  <div id="saveStatus">
-    Changes saved.
-  </div>
+        <div id="saveStatus">Changes saved.</div>
 
-  <div className="countHistory">
-    <h3>
-      Count History:
-    </h3>
-    <ul>
-     {history.map((item, index) => (<li key= {index}>{item}</li>))}
-    </ul>
-  </div>
+        <div className="countHistory">
+          <h3>Count History:</h3>
+          <ul>
+            {history.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        </div>
 
-  <small id="stepValueKeyboardInstr">
-    Use ArrowUp to increment and ArrowDown to decrement.
-  </small>
-</div>
+        <small id="stepValueKeyboardInstr">
+          Use ArrowUp to increment and ArrowDown to decrement.
+        </small>
+      </div>
     </>
   );
 }
