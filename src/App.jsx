@@ -35,6 +35,13 @@ function App() {
     setCount((prev) => prev - +stepValue);
   };
 
+  const resetCounter = () => {
+    setCount(0);
+    localStorage.removeItem("History");
+    setHistory([]);
+
+  }
+  
   return (
     <>
       <div className="stepCounterCard">
@@ -51,7 +58,7 @@ function App() {
           <button className="buttonPadding" onClick={handleIncrement}>
             Increment
           </button>
-          <button className="buttonPadding" id="resetCounter">
+          <button className="buttonPadding" id="resetCounter" onClick={resetCounter}>
             Reset
           </button>
         </div>
